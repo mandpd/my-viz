@@ -1,0 +1,138 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<!--  Roboto webfont -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,300,700" rel="stylesheet" type="text/css">
+<!--  Material design icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--  Generic "site" styles -->
+<link rel="stylesheet" href="site.css">
+
+<style>
+
+/* Layout */
+
+.layout--page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Page header */
+
+.header {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.header h1 {
+  font-weight: 300;
+  font-size: 32px;
+  margin: 40px 0 15px 0;
+}
+.header .summary {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+
+/* Control Bar */
+
+.control-bar {
+  border-top: solid 1px #eee;
+  border-bottom: solid 1px #eee;
+  padding: 12px 0;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.control-bar .big-button {
+  outline: none;
+  background: white;
+  border-radius: 60px;
+  border: solid 1px #ddd;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin-right: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.control-bar .big-button.play {
+  width: 60px;
+  height: 60px;
+}
+.control-bar .big-button.play .material-icons {
+  font-size: 40px;
+}
+
+/* Graphic */
+.graphic {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.graphic .column {
+
+}
+
+
+</style>
+
+<header>
+  <h2 class="layout--page">Data Vizualization</h2>
+</header>
+
+
+
+  <div class="header layout--page">
+    <h1>Data Vizualization Home Page</h1>
+  </div>
+
+  <div class="control-bar layout--page">
+    <button class="big-button replay">
+      <i class="material-icons">replay</i>
+    </button>
+    <button class="big-button play">
+      <i class="material-icons">play_arrow</i>
+    </button>
+    <button class="big-button skip">
+      <i class="material-icons">skip_next</i>
+    </button>
+  </div>
+
+  <div class="graphic layout--page">
+    <div class="column">
+      <h3>Data</h3>
+      <p>Sample data sets to choose from.</p>
+    </div>
+    <div class="column">
+      <h3>Features</h3>
+      <p>Sample data sets to choose from.</p>
+    </div>
+    <div class="column">
+      <h3>Hidden Layers</h3>
+      <p>Sample data sets to choose from.</p>
+    </div>
+    <div class="column">
+      <h3>Output</h3>
+      <p>Sample data sets to choose from.</p>
+    </div>
+  </div>
+
+  <div class="article layout--page">
+    <h2>How Many Layers Should I Use?</h2>
+    <p>Some text.</p>
+  </div>
+
+
+<footer>
+  <div class="layout--page">
+    Footer
+  </div>
+</footer>
+
+<script src="lib/d3.min.js"></script>
+<script>
+var stage = d3.select(".stage");
+
+</script>
