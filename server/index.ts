@@ -3,7 +3,7 @@ import { PORT } from './config/constants';
 
 const app = express();
 app.use(express.json());
-app.use(express.static('src'));
+app.use(express.static('public'));
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
